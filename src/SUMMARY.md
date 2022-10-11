@@ -2,5 +2,5 @@
 
 - [Upgrading topgrade](./upgrade.md)
 - [Platforms](./platforms.md)
-- [Windows](./windows/SUMMARY.md]
+- [Windows](./windows/README.md]
 - [Notifications](./notifications.md)
