@@ -1,7 +1,7 @@
 # Summary
 
 - [Upgrading topgrade](./upgrade.md)
-- [Supported patforms](./platforms.md)
+- [Supported platforms](./platforms.md)
 - [Windows](./windows/README.md)
   - [Step]()
 - [Linux]()
