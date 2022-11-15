@@ -1,8 +1,8 @@
 # Summary
 
-- [Get started](./intro.md)
-- [Upgrading topgrade](./upgrade.md)
-- [Supported platforms](./platforms.md)
+- [Get Started](./intro.md)
+- [Upgrading Topgrade](./upgrade.md)
+- [Supported Platforms](./platforms.md)
 - [Windows](./windows/README.md)
   - [Step]()
 - [Linux]()
