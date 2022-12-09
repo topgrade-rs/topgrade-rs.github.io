@@ -6,4 +6,4 @@ One thing to note is that Topgrade will fail to upgrade any application used for
 
 We recommend to create a shortcut for `topgrade --keep` and set this shortcut to always run as administrator, then invoke Topgrade by doubling clicking the shortcut. This will make sure Topgrade always runs with administrative privileges by Windows' built in terminal.
 
-Note that Togprade will probably fail to upgrade itself if installed using `scoop`.
+Note that Topgrade will probably fail to upgrade itself if installed using `scoop`.
