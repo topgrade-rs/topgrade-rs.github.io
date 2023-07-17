@@ -21,7 +21,10 @@ Depending on the platform, available software and the configuration file, topgra
 ## Remote execution
 
 If `remote_topgrade` option is specified, Topgrade will first connect through SSH to the specified hosts
-and run an already installed `topgrade` executable (either `topgrade` or the executable specified by the `remote_topgrade_path` option).
+and then run `topgrade` command on it.
+
+**Note:** This requires `topgrade` to already be installed on the specified hosts. Local `topgrade` will try to
+run the `topgrade` command found in `PATH` or the executable specified by the `remote_topgrade_path` option).
 
 ## Windows
 
