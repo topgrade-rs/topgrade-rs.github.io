@@ -107,3 +107,19 @@ If ran on Linux, Topgrade will execute the following steps (when the relevant so
 - Update [Pi-hole](https://pi-hole.net) (`pihole -up`)
 - Run firmware upgrades (`fwupdmgr refresh` and `fwupdmgr get-updates`)
 - Check for needed restarts (`needrestart`)
+
+## macOS
+
+If ran on macOS, Topgrade will execute the following steps (when the relevant software is installed):
+
+- Update [Brew](https://brew.sh) and installed [Brew](https://brew.sh) formulae and casks (`brew update`, `brew upgrade --ignore-pinned --formula`)
+  - This is done for both Intel and ARM installs of Brew if both are present
+- Update installed [Brew](https://brew.sh) casks (`brew cu`)
+  - This is done for both Intel and ARM installs of Brew if both are present
+  - If installed, this will use [brew-cask-upgrade](https://github.com/buo/homebrew-cask-upgrade) (`brew cu -y`)
+  - Otherwise, Brew's built-in upgrade command will be used (`brew upgrade --cask`)
+- Upgrade [MacPorts](https://www.macports.org) itself as well as installed ports (`port selfupdate` and `port -u upgrade outdated`)
+- Upgrade all applications present in the `/Applications` folder that use [Sparkle](https://sparkle-project.org) as their update framework (`sparkle bundle --check-immediately --application ${PATH_TO_APP}` ran on compatible apps)
+  - This requires [sparkle-cli](https://sparkle-project.org/documentation/sparkle-cli/) to be installed
+- Update all [App Store](https://www.apple.com/app-store/) apps through [mas-cli](https://github.com/mas-cli/mas) (`mas upgrade`)
+- [Check for macOS system update](https://support.apple.com/en-us/HT201541) and offer to install it (`softwareupdate --list` and `softwareupdate --install --all --no-scan`)
