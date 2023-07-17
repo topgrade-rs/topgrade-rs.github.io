@@ -16,7 +16,7 @@ Topgrade should probably work on whichever platform it can be build. The real qu
 - macOS
 - Windows
 
-Depending on the platform, available software and the configuration file, topgrade runs upgrades for any of the following:
+Depending on the platform, available software and the configuration file, topgrade runs upgrades for any of the following (multiple sections can apply at once):
 
 ## Remote execution
 
