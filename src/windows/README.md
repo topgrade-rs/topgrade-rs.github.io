@@ -1,9 +1,8 @@
 # Windows
 
-Windows is fully supported by Topgrade. You can either install it from Scoop or use the binary in the release page.
+Windows is fully supported by Topgrade. You may elect to install it from Scoop or use the binary in the release page.
+It is important to note that Topgrade may be unable to upgrade certain applications used for launching it, including third-party terminals like cmder.
 
-One thing to note is that Topgrade will fail to upgrade any application used for launching it, such as 3rd party terminals like cmder.
+We suggest either creating a shortcut for 'topgrade--keep' or running Topgrade via your preferred shell.
 
-We recommend to create a shortcut for `topgrade --keep` and set this shortcut to always run as administrator, then invoke Topgrade by doubling clicking the shortcut. This will make sure Topgrade always runs with administrative privileges by Windows' built in terminal.
-
-Note that Topgrade will probably fail to upgrade itself if installed using `scoop`.
+Please note that if installed via **scoop**, Topgrade may fail to upgrade itself unless `self_rename = true` is set in **topgrade.toml**.
