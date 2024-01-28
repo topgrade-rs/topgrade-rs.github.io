@@ -1,6 +1,8 @@
-# Windows
+# macOS
 
-[Scoop](https://github.com/ScoopInstaller/Main/blob/master/bucket/topgrade.json)
+## Installation
+
+[Homebrew](https://formulae.brew.sh/formula/topgrade) or [MacPorts](https://ports.macports.org/port/topgrade/)
 
 ## Usage
 
@@ -12,7 +14,7 @@ See `config.example.toml` for an example configuration file.
 
 ### Configuration Path
 
-`%APPDATA%`
+`${XDG_CONFIG_HOME:-~/.config}`
 
 `topgrade` will look for the configuration file in the following places, in order of priority:
 
@@ -22,11 +24,3 @@ See `config.example.toml` for an example configuration file.
 If the file with higher priority is present, no matter it is valid or not, the other configuration files will be ignored.
 
 On the first run(no configuration file exists), `topgrade` will create a configuration file at `CONFIG_DIR/topgrade.toml` for you.
-
-## FAQ
-
-It is important to note that Topgrade may be unable to upgrade certain applications used for launching it, including third-party terminals like cmder.
-
-We suggest either creating a shortcut for 'topgrade--keep' or running Topgrade via your preferred shell.
-
-Please note that if installed via **scoop**, Topgrade may fail to upgrade itself unless `self_rename = true` is set in **topgrade.toml**.
