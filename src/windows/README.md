@@ -1,6 +1,7 @@
 # Windows
 
-[Scoop](https://github.com/ScoopInstaller/Main/blob/master/bucket/topgrade.json)
+* [Scoop](https://scoop.sh/#/apps?q=topgrade)
+* [Winget](https://winstall.app/apps/topgrade-rs.topgrade)
 
 ## Usage
 
