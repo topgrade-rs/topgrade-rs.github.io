@@ -1,5 +1,6 @@
 # Windows
 
+* [Chocolatey](https://community.chocolatey.org/packages/topgrade)
 * [Scoop](https://scoop.sh/#/apps?q=topgrade)
 * [Winget](https://winstall.app/apps/topgrade-rs.topgrade)
 
