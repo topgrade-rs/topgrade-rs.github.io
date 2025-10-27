@@ -1,6 +1,6 @@
 # DragonFly and Free BSD
 
-## Instalation
+## Installation
 
 Either use `cargo install` or the compiled binaries from the release page.
 The compiled binaries contain a self-upgrading feature.
