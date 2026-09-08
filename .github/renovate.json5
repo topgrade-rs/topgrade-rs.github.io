@@ -6,4 +6,5 @@
         ":semanticCommitTypeAll(chore)",
         ":disableRateLimiting",
     ],
+    maxMajorIncrement: 0,
 }
